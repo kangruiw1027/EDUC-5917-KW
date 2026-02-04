@@ -32,7 +32,7 @@ function loadPage(page) {
 
 	$.ajax({url: 'pages/page' + page + '.html'}).
 		done(function(pageHtml) {
-			$('.sj-book .p' + page).html(pageHtml.replace('K2/Kangrui-Book Kangrui-Book Wang' +
+			$('.sj-book .p' + page).html(pageHtml.replace('K2/KangruiBook KangruiBook Wang' +
 				/', ''));
 		});
 
