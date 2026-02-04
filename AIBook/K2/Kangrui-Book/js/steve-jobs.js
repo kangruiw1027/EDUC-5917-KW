@@ -32,7 +32,7 @@ function loadPage(page) {
 
 	$.ajax({url: 'pages/page' + page + '.html'}).
 		done(function(pageHtml) {
-			$('.sj-book .p' + page).html(pageHtml.replace('samples/Kangrui Kangrui Wang' +
+			$('.sj-book .p' + page).html(pageHtml.replace('K2/Kangrui-Book Kangrui-Book Wang' +
 				/', ''));
 		});
 
@@ -137,7 +137,7 @@ function zoomThis(pic) {
 				left: position.left-picPosition.left
 			};
 
-			$('.samples .bar').css({visibility: 'hidden'});
+			$('.K2 .bar').css({visibility: 'hidden'});
 			$('#slider-bar').hide();
 			
 		
@@ -174,7 +174,7 @@ function zoomOut() {
 
 	$('.zoom-pic').remove();
 	$('#book-zoom').transform('scale(1, 1)');
-	$('.samples .bar').css({visibility: 'visible'});
+	$('.K2 .bar').css({visibility: 'visible'});
 	$('#slider-bar').show();
 
 	if (transitionEnd)
